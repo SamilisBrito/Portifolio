@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description"
+    content="Samilis Brito - Desenvolvedora Front-end | React | Next.js | Vue 3 | TypeScript | Tailwind | Figma | Acessibilidade WCAG | Capanema, Pará">
+  <title>Samilis Brito | Desenvolvedora Front-end</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <a href="#main" class="skip-link">Pular para o conteúdo principal</a>
+  <header class="header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a href="#inicio" class="nav__logo" aria-label="Samilis Brito - Ir para o início">SB</a>
+      <button type="button" class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false"
+        aria-controls="navDrawer">
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+      </button>
+      <ul class="nav__menu nav__menu--desktop" id="navMenu">
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="nav__overlay" id="navOverlay" aria-hidden="true"></div>
+  <div class="nav__drawer" id="navDrawer" aria-hidden="true">
+    <ul class="nav__drawer-menu">
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#experiencia">Experiência</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </div>
+
+  <main id="main">
+    <section id="inicio" class="hero" aria-labelledby="hero-title">
+      <div class="hero__wrapper container">
+        <div class="hero__content">
+          <p class="hero__greeting">Olá, me chamo</p>
+          <h1 class="hero__title" id="hero-title">Samilis Brito</h1>
+          <p class="hero__subtitle">Desenvolvedora Front-end especializada em interfaces modernas, performáticas e
+            acessíveis</p>
+          <p class="hero__tagline">React · Next.js · Vue 3 · TypeScript · Tailwind · Figma · Kanban</p>
+          <div class="hero__actions">
+            <a href="#contato" class="btn btn--primary">Entrar em contato</a>
+            <a href="https://github.com/SamilisBrito" target="_blank" rel="noopener noreferrer"
+              class="btn btn--secondary">Ver perfil no GitHub <span class="visually-hidden">(abre em nova
+                aba)</span></a>
+          </div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <img src="assets/mini-samilis.svg" alt="" class="hero__avatar">
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <span class="hero__scroll-text">Role para explorar</span>
+        <div class="hero__scroll-indicator"></div>
+      </div>
+    </section>
+
+    <section id="projetos" class="projects" aria-labelledby="projetos-title">
+      <div class="container">
+        <h2 class="section__title" id="projetos-title">Projetos em destaque</h2>
+        <div class="projects__grid">
+          <article class="project-card project-card--contain">
+            <a href="https://sam-next-roan.vercel.app/entrar" target="_blank" rel="noopener noreferrer"
+              class="project-card__image-link">
+              <img src="assets/sisgecom.png"
+                alt="Preview do SISGECOM - Dashboard de gestão com KPIs e gráficos de demandas"
+                class="project-card__image" />
+            </a>
+            <div class="project-card__header">
+              <h3 class="project-card__title">SISGECOM</h3>
+              <span class="project-card__badge">Next.js · TypeScript · Tailwind</span>
+            </div>
+            <p class="project-card__description">
+              Sistema de gerenciamento de consulta para o centro de especialidades médicas (CEM) do município de
+              Capanema - PA. Repositório fechado.
+            </p>
+            <div class="project-card__links">
+              <a href="https://sam-next-roan.vercel.app/entrar" target="_blank" rel="noopener noreferrer"
+                class="project-card__link">Ver demonstração do SISGECOM <span class="visually-hidden">(abre em nova
+                  aba)</span> →</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <a href="https://samilisbrito.github.io/Noivite/" target="_blank" rel="noopener noreferrer"
+              class="project-card__image-link">
+              <img src="assets/noivite.png" alt="Preview do Noivite - Landing page de convites digitais para casamentos"
+                class="project-card__image" />
+            </a>
+            <div class="project-card__header">
+              <h3 class="project-card__title">Noivite</h3>
+              <span class="project-card__badge">HTML · CSS · JS · React · TypeScript · Tailwind</span>
+            </div>
+            <p class="project-card__description">
+              Landing page em HTML, CSS e JavaScript que apresenta o gerenciador de convites digitais desenvolvido
+              com React, TypeScript e Tailwind.
+            </p>
+            <div class="project-card__links">
+              <a href="https://samilisbrito.github.io/Noivite/" target="_blank" rel="noopener noreferrer"
+                class="project-card__link">Ver demonstração do Noivite <span class="visually-hidden">(abre em nova
+                  aba)</span> →</a>
+              <a href="https://github.com/SamilisBrito/Noivite" target="_blank" rel="noopener noreferrer"
+                class="project-card__link">Código no GitHub <span class="visually-hidden">(abre em nova aba)</span>
+                →</a>
+            </div>
+          </article>
+          <article class="project-card project-card--mobile">
+            <div class="project-card__media">
+              <div class="project-card__image-link">
+                <img src="assets/sd-arreios.png"
+                  alt="Preview do SD-arreios - App mobile para gerenciamento de empresa agropecuária"
+                  class="project-card__image" />
+              </div>
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__header">
+                <h3 class="project-card__title">SD-arreios</h3>
+                <span class="project-card__badge">React Native · Firebase</span>
+              </div>
+              <p class="project-card__description">
+                Remigração completa do Glideapp para React Native customizado. Replanejamento da arquitetura, integração
+                Firebase e Cloudflare R2 para imagens. Atuação em requisitos, prototipação e comunicação com o cliente.
+                Projeto fechado.
+              </p>
+            </div>
+          </article>
+          <article class="project-card project-card--mobile">
+            <div class="project-card__media">
+              <a href="https://imperio-das-pizzas.vercel.app/menu/voowYBtFYwZXH7dkF93yHLS35Sh2" target="_blank"
+                rel="noopener noreferrer" class="project-card__image-link">
+                <img src="assets/imperio-pizzas.png"
+                  alt="Preview do Império das Pizzas - App de cardápio e pedidos de pizzaria"
+                  class="project-card__image" />
+              </a>
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__header">
+                <h3 class="project-card__title">Império das Pizzas</h3>
+                <span class="project-card__badge">React · Tailwind</span>
+              </div>
+              <p class="project-card__description">
+                Criei um cardápio digital para dispositivos móveis, com navegação intuitiva e personalização
+                de pedidos via WhatsApp.
+              </p>
+              <div class="project-card__links">
+                <a href="https://imperio-das-pizzas.vercel.app/menu/voowYBtFYwZXH7dkF93yHLS35Sh2" target="_blank"
+                  rel="noopener noreferrer" class="project-card__link">Ver cardápio do Império das Pizzas <span
+                    class="visually-hidden">(abre em nova aba)</span> →</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <a href="https://refoodproject.vercel.app/" target="_blank" rel="noopener noreferrer"
+              class="project-card__image-link">
+              <img src="assets/refood.png" alt="Preview do Refood - Plataforma de delivery com descontos em alimentos"
+                class="project-card__image" />
+            </a>
+            <div class="project-card__header">
+              <h3 class="project-card__title">Refood</h3>
+              <span class="project-card__badge">React · Spring Boot</span>
+            </div>
+            <p class="project-card__description">
+              Plataforma full-stack de delivery de alimentos com descontos. React.js e Spring Boot. Liderança técnica,
+              da concepção ao deploy, design da interface e code reviews.
+            </p>
+            <div class="project-card__links">
+              <a href="https://refoodproject.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="project-card__link">Ver demonstração <span class="visually-hidden">(abre em nova aba)</span>
+                →</a>
+              <a href="https://github.com/IReFoodI" target="_blank" rel="noopener noreferrer"
+                class="project-card__link">GitHub <span class="visually-hidden">(abre em nova aba)</span> →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a href="https://doctor-who-timer.vercel.app/" target="_blank" rel="noopener noreferrer"
+              class="project-card__image-link">
+              <img src="assets/doctor-who-timer.png"
+                alt="Preview do Doctor Who Timer - Timer inspirado na série Doctor Who com TARDIS e controles"
+                class="project-card__image" />
+            </a>
+            <div class="project-card__header">
+              <h3 class="project-card__title">Doctor Who Timer</h3>
+              <span class="project-card__badge">React · SASS</span>
+            </div>
+            <p class="project-card__description">
+              Timer interativo inspirado na série Doctor Who, desenvolvido com React.
+
+            </p>
+            <div class="project-card__links">
+              <a href="https://doctor-who-timer.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="project-card__link">Ver demonstração do Doctor Who Timer <span class="visually-hidden">(abre em
+                  nova aba)</span> →</a>
+              <a href="https://github.com/SamilisBrito/doctor-who-timer" target="_blank" rel="noopener noreferrer"
+                class="project-card__link">Código no GitHub <span class="visually-hidden">(abre em nova aba)</span>
+                →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" class="skills" aria-labelledby="habilidades-title">
+      <div class="container">
+        <h2 class="section__title" id="habilidades-title">Habilidades técnicas</h2>
+        <div class="skills__grid">
+          <div class="skill-category">
+            <h3 class="skill-category__title">Principais</h3>
+            <ul class="skill-list">
+              <li>React</li>
+              <li>Vue</li>
+              <li>TypeScript</li>
+              <li>JavaScript (ES6+)</li>
+              <li>HTML5 & CSS3</li>
+              <li>Git</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3 class="skill-category__title">Frameworks & Ferramentas</h3>
+            <ul class="skill-list">
+              <li>Next.js</li>
+              <li>Tailwind CSS</li>
+              <li>Vue 3</li>
+              <li>Zustand / Pinia</li>
+              <li>Figma</li>
+              <li>AWS S3</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3 class="skill-category__title">Práticas</h3>
+            <ul class="skill-list">
+              <li>APIs REST</li>
+              <li>Componentização</li>
+              <li>Design Systems</li>
+              <li>Acessibilidade (WCAG)</li>
+              <li>Performance</li>
+              <li>Scrum / Kanban</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia" class="experience" aria-labelledby="experiencia-title">
+      <div class="container">
+        <h2 class="section__title" id="experiencia-title">Experiência</h2>
+        <div class="timeline">
+          <article class="timeline__item">
+            <div class="timeline__period">Dez 2024 — Atual</div>
+            <h3 class="timeline__role">Desenvolvedora de Software</h3>
+            <p class="timeline__company">Trindtech</p>
+
+          </article>
+          <article class="timeline__item">
+            <div class="timeline__period">Out 2023 — Atual</div>
+            <h3 class="timeline__role">Front-end Developer & UX/UI Designer</h3>
+            <p class="timeline__company">Ascêndia Tech · Autônomo</p>
+
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contact" aria-labelledby="contato-title">
+      <div class="container">
+        <h2 class="section__title" id="contato-title">Contato</h2>
+        <p class="contact__text">Vamos conversar? Entre em contato para projetos e parcerias.</p>
+        <p class="contact__location">Capanema, Pará · Brasil</p>
+        <div class="contact__links">
+          <a href="https://wa.me/5591993559449" target="_blank" rel="noopener noreferrer" class="contact__link">
+            <img src="assets/whatsapp.svg" alt="" class="contact__link-icon contact__link-icon--img" width="20"
+              height="20" aria-hidden="true">
+            WhatsApp <span class="visually-hidden">(abre em nova aba)</span>
+          </a>
+          <a href="https://www.linkedin.com/in/samilis-brito/" target="_blank" rel="noopener noreferrer"
+            class="contact__link">
+            <span class="contact__link-icon" aria-hidden="true">in</span>
+            LinkedIn <span class="visually-hidden">(abre em nova aba)</span>
+          </a>
+          <a href="https://github.com/SamilisBrito" target="_blank" rel="noopener noreferrer" class="contact__link">
+            <span class="contact__link-icon" aria-hidden="true">⌘</span>
+            GitHub <span class="visually-hidden">(abre em nova aba)</span>
+          </a>
+          <a href="mailto:samilisbritto@gmail.com" class="contact__link">
+            <span class="contact__link-icon" aria-hidden="true">@</span>
+            samilisbritto@gmail.com
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">© 2025 Samilis Brito. Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
