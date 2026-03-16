@@ -832,6 +832,25 @@ ul {
   .hero__scroll {
     display: none;
   }
+
+  /* Mini Samilis menor no mobile */
+  .hero__avatar {
+    max-width: 180px;
+  }
+
+  /* Reduz espaço entre hero e próxima seção */
+  .hero {
+    padding-bottom: var(--space-xl);
+  }
+
+  .hero__wrapper {
+    gap: var(--space-lg);
+  }
+
+  /* SISGECOM: corta a imagem no mobile */
+  .project-card--contain .project-card__image-link .project-card__image {
+    object-fit: cover;
+  }
 }
 
 /* ===== Acessibilidade ===== */
