@@ -604,6 +604,22 @@ ul {
   margin-bottom: var(--space-md);
 }
 
+.project-card__closed-label {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  font-size: 0.7rem;
+  font-family: var(--font-mono);
+  color: var(--color-primary);
+  padding: var(--space-xs) var(--space-sm);
+  background: #e7edf4;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(10, 77, 140, 0.25);
+  z-index: 1;
+  pointer-events: none;
+  font-weight: 500;
+}
+
 .project-card__links {
   display: flex;
   flex-wrap: wrap;
